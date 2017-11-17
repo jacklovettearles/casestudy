@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Enter number below</p>
+<form>
+<input type="number" id="input1"/>
+
+</form>
+<div><button id="button1">Submit</button></div>
+<div id="output1"></div>
+<div id="output2"></div>
+
+<script>
+ 
+    var event1 = document.getElementById("button1");
+    event1.addEventListener("click", displayNumbers, false);
+    
+    function displayNumbers() {
+
+            var value = parseInt(document.getElementById("input1").value);
+            console.log(value);
+        
+        var numOne = value -1;
+        var numTwo = value +1;
+        
+        document.getElementById("output1").innerHTML = "this is the lower number" +numOne;
+        document.getElementById("output2").innerHTML = "this is the higher number" +numTwo;
+        
+    }
+        
+            
+        
+
+      
+</script>
+
+</body>
+</html>

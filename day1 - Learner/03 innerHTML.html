@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<input type="text" id="input1"/>
+</form>
+<div><button id="button1">Button</button></div>
+<div id="demo"></div>
+
+<script>
+    
+//    Access the DOM
+    var event1 = document.getElementById("button1");
+    
+//    console.log(event1);
+//    Event listener
+    event1.addEventListener("click", displayInput, false);
+    
+//    formulate the function
+    
+    function displayInput() {
+        var userInput1 = document.getElementById("input1").value;
+   
+    
+//    console.log("userInput1");
+//    display the input value back to the webpage
+        
+        document.getElementById("demo").innerHTML = userInput1;
+    
+        
+    }
+    
+    
+    
+</script>
+</body>
+</html>

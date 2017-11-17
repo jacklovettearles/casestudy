@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+    <p>Please enter 2 numbers below</p>
+    <form>
+        <input type="number" id="input1" />
+        <input type="number" id="input2" />
+    </form>
+    <div><button id="button1">Compare two numbers</button></div>
+    <div id="demo"></div>
+
+
+    <script>
+        var event1 = document.getElementById("button1");
+
+        event1.addEventListener("click", displayGreater, false);
+
+        function displayGreater() {
+
+
+
+            var value1 = document.getElementById("input1").value;
+            console.log(value1);
+
+            var value2 = document.getElementById("input2").value;
+            console.log(value2);
+
+
+            var total = parseInt(value1) + parseInt(value2);
+
+            if (value1 > value2) {
+                document.getElementById("demo").innerHTML = value1;
+            } else if (value1 < value2) {
+                document.getElementById("demo").innerHTML = value2;
+
+            } else {
+                document.getElementById("demo").innerHTML = "the numbers are the same";
+            }
+
+        }
+    </script>
+
+</body>
+</html>

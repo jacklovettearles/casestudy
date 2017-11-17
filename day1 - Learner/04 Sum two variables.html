@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+</form>
+<div><button id="button1">Sum of the two numbers</button></div>
+<div id="demo"></div>
+
+<script>
+    
+     var event1 = document.getElementById("button1");
+    
+     event1.addEventListener("click", displaySum, false);
+    
+    function displaySum() {
+        
+//        alert("hello");
+        
+        var value1 = document.getElementById("input1").value;
+        console.log(value1);
+    
+        var value2 = document.getElementById("input2").value;
+        console.log(value2);
+
+        
+        var total = parseInt(value1) + parseInt(value2);
+        
+        document.getElementById("demo").innerHTML = total;
+        console.log(total);
+   
+    }
+    
+    
+    
+    /*var value1 = document.getElementById("input1").value;
+    console.log(value1);
+    
+    var value2 = document.getElementById("input2").value;
+    console.log(value2);
+    
+    var total = (value1 * value2);*/
+    
+   
+    
+</script>
+
+</body>
+</html>

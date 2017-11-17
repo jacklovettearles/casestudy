@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Conditional Test</p>
+<form>
+<input type="number" id="input1"/>
+
+
+</form>
+<div><button id="button1">Test !</button></div>
+<div id="demo"></div>
+
+<script>
+        var event1 = document.getElementById("button1");
+    event1.addEventListener("click", conditionalF, false);
+    
+    function conditionalF() {
+        var input = parseInt(document.getElementById("input1").value);
+        console.log(input);
+        
+        if(input < 0) {
+            document.getElementById("demo").innerHTML = "The number is negative.";
+        }
+        else if(input < 10) {
+            document.getElementById("demo").innerHTML = "The number is less than 10.";
+        }
+        else if(input > 10) {
+            document.getElementById("demo").innerHTML = "The number is greater than 10.";
+        }
+        else {
+            document.getElementById("demo").innerHTML = "The number is ten.";
+        }
+    }
+    
+</script>
+
+</body>
+</html>

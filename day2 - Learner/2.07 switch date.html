@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+    
+/*var date = new Date()
+date.getDate();*/
+    
+  //Create a switch statement that displays the current day and time of the week on the webpage
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    /*var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];*/
+    /*document.getElementById("demo").innerHTML = days[date.getDay()] + ": " + time;*/
+    switch(date.getDay()) {
+        case 0:
+            date="Sunday";
+            break;
+        case 1:
+            date="Monday";
+            break;
+        case 2:
+            date="Tuesday";
+            break;
+        case 3:
+            date="Wednesday";
+            break;
+        case 4:
+            date="Thursday";
+            break;
+        case 5:
+            date="Friday";
+            break;
+        case 6:
+            date="Saturday";
+    }
+    document.getElementById("demo").innerHTML = date + ": " + time;
+
+
+
+</script>
+
+</body>
+</html>
